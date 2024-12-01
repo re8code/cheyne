@@ -4,7 +4,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="202202833_main.css">
+	<link rel="stylesheet" href="./202202833_main.css">
+	<script src="./202202833_script.js"></script>
 	<title>MY HOMETOWN</title>
 </head>
 
@@ -55,21 +56,24 @@
 				</ul>
 			</nav>
 		</div>
-		<h2 id="home" style="text-decoration: underline; color: hsl(300, 20%, 50%);">Gangseo-gu, SEOUL</h2>
-		<p class="background">
+		<h2>Gangseo-gu, SEOUL</h2>
+		<p class="background" onclick="explain_show()">
 			<!--서울 설명-->
 			Gangseo-gu is located in the western part of Seoul, bordering the Han River and close to Gimpo Airport. <br>
 			With convenient transportation options like the Airport Railroad and Line 9, <br>
 			it is an accessible area that has grown as a mix of new urban developments and residential spaces. <br>
 			Historically, Gangseo-gu served as a transportation and trade center along the Han River <br>
-			and has developed into a key urban area today.
+			and has developed into a key urban area today.<br><br>
+			click for hide!!
 		</p>
 	</header>
 	<main>
 		<section id="history">
 			<h2>HISTORY</h2>
+			<div><button type="button" onclick="art_rotate()">Rotation</button></div>
+
 			<!-- history 섹션 : 고향의 역사와 배경을 설명하는 3개의 별도 p & 고약의 역사와 관련된 외부 리소스 링크 2개 -->
-			<article class="history">
+			<article class="history1">
 				<h3>An Important Base in the Goryeo Era</h3>
 				<p>
 					During the Goryeo period, Gangseo-gu was known as "Yangcheon-hyeon"
@@ -77,14 +81,14 @@
 					It played a significant role in facilitating trade and military movements.
 				</p>
 			</article>
-			<article class="history">
+			<article class="history2">
 				<h3>Separation from Yangcheon-gu in the Joseon Dynasty</h3>
 				<p>
 					After the Joseon era, Gangseo-gu served as a strategic area protecting the capital, <br>
 					and in 1977, it separated from Yangcheon-gu to form the present-day Gangseo-gu.
 				</p>
 			</article>
-			<article class="history">
+			<article class="history3">
 				<h3>Urbanization and Development</h3>
 				<p>
 					Starting in the 1980s, as Seoul expanded, large residential complexes <br>
