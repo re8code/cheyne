@@ -86,3 +86,21 @@ function set_image(type) {
   let ele = document.querySelector('.' + type + ' img');
   ele.src = resourses.get(type);
 }
+
+function check_number(phone) {
+  const regex = /\d{3}-\d{4}-\d{4}/;
+  if (regex.test(phone) == false)
+    throw new Error('Invalid Number!!');
+  else
+    return phone;
+}
+
+function phone_check() {
+  const phone = document.getElementById('phone').value;
+  try {
+    console.log(check_number(phone));
+  }
+  catch(error) {
+    console.log(error.message);
+  }
+}
