@@ -113,6 +113,10 @@ li:hover .dropdown-content {
 }
 
 /* attraction part *************************************************/
+#attraction h2 {
+  text-align: center;
+}
+
 table {
 	width: 70%;
 	height: 300px;
