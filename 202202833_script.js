@@ -104,3 +104,16 @@ function phone_check() {
     console.log(error.message);
   }
 }
+
+function localfood_init() {
+  const eles = document.getElementsByClassName('food');
+  check_image(eles[0], '갈비탕');
+  check_image(eles[1], '버섯매운탕');
+}
+
+function check_image(ele, alt_name) {
+  if (ele.getAttribute('src')!='' || ele.alt=='') return;
+
+  if (alt_name == '갈비탕') ele.src = './res/galbitang.webp';
+  else if (alt_name == '버섯매운탕') ele.src = './res/beoseot.jpg';
+}

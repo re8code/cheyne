@@ -143,10 +143,15 @@ tr:nth-child(odd) {
 	overflow: auto;
 }
 
+/* local food part *************************************************/
+#local_food h2 {
+  text-align: center;
+}
+
 .local_food {
-	width: 100%;
+	width: 1400px;
 	height: auto;
-	margin: 20px;
+	margin: 20px auto;
 	padding: 20px;
 	border: 1px solid black;
 	clear: left;
