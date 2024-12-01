@@ -52,6 +52,7 @@ function history_initdata() {
     let key   = document.querySelector('#history .history' + i + ' h3').innerHTML;
     let value = document.querySelector('#history .history' + i + ' p').innerHTML;
     let obj = {};
+    obj.index = i;
     obj.key = key;
     obj.value = value;
     history_data.push(obj);
@@ -113,6 +114,7 @@ function localfood_init() {
 
 function check_image(ele, alt_name) {
   if (ele.getAttribute('src')!='' || ele.alt=='') return;
+  else if (ele.getAttribute('src')=='' && ele.alt=='') return;
 
   if (alt_name == '갈비탕') ele.src = './res/galbitang.webp';
   else if (alt_name == '버섯매운탕') ele.src = './res/beoseot.jpg';
